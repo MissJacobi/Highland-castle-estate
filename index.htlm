@@ -1,0 +1,20 @@
+ <!DOCKTYPE htlm >
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"> content="width=device-width, initial-scale=1.0">
+        <title>Highland Castle Estate</title>
+        <link rel="stylesheet" href=""style.css">
+    </head>
+    <body>
+
+        <nav>
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('about')">About us</button>
+            <button onclick="showSection('rooms')">Our rooms</button>
+            <button onclick="showSection('book')">Book now</button>
+        </nav>
+
+        <section id="home" class=""
+    </body>
+ </html>
