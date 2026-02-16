@@ -6,15 +6,17 @@
         <title>Highland Castle Estate</title>
         <link rel="stylesheet" href=""style.css">
     </head>
-    <body>
-
+    <body class="home-bg">
         <nav>
-            <button onclick="showSection('home')">Home</button>
-            <button onclick="showSection('about')">About us</button>
-            <button onclick="showSection('rooms')">Our rooms</button>
-            <button onclick="showSection('book')">Book now</button>
+            <a href="index.htlm" class="active">Home</a>
+            <a href="about.htlm">About us</a>
+            <a href="booking.htlm">Rooms & Booking</a>
         </nav>
 
-        <section id="home" class=""
+        <header class="hero">
+            <h1>Highland Castle Estate</h1>
+            <p>A Royal Experience Awaits</p>
+        </header>
+
     </body>
  </html>
