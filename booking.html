@@ -7,6 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a> 
+        <a href="booking.html" class="active">Rooms & Booking</a>
+    </nav>
+
+    <main id="booking-area">
+        <h2>Select Your Suite</h2>
+
+        <div class="room-selection">
+            <input type="radio" name="room" id="std" value="Standard"><lable for="std">Thistle Standard</lable><br>
+            <input type="radio" name="room" id="del" value="Deluxe"><lable for="del">Royal Deluxe</lable><br>
+            <input type="radio" name="room" id="sui" value="Suite"><lable for="sui">Monarch Suite</lable>
+        </div>
+
+        <di id="booking-form">
+            <input type="text" id="guestName" placeholder="Your name">
+            <input type="date" id="chechInDate">
+            <button onclick="confirmBooking()">Book Now</button>
+        </div>
+
+        <div id="confirmation" style="display: none;">
+            <h3>Booking Confirmed!</h3>
+            <p>Welcome to the Highlands.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
