@@ -9,22 +9,26 @@
 <body>
     <nav>
         <a href="index.html">Home</a>
+        <a href="suites.html">Suits</a>
+        <a href="weddings.html">Weddings</a>
         <a href="about.html">About us</a> 
-        <a href="booking.html" class="active">Rooms & Booking</a>
+        <a href="booking.html" class="active">Booking</a>
     </nav>
 
     <main id="booking-area">
         <h2>Select Your Suite</h2>
 
         <div class="room-selection">
-            <input type="radio" name="room" id="std" value="Standard"><lable for="std">Thistle Standard</lable><br>
-            <input type="radio" name="room" id="del" value="Deluxe"><lable for="del">Royal Deluxe</lable><br>
-            <input type="radio" name="room" id="sui" value="Suite"><lable for="sui">Monarch Suite</lable>
+            <input type="radio" name="room" id="std" value="Standard"><label for="std">Thistle Standard<label><br>
+            <input type="radio" name="room" id="del" value="Deluxe"><label for="del">Royal Deluxe</label><br>
+            <input type="radio" name="room" id="sui" value="Suite"><label for="sui">Monarch Suite</label>
         </div>
 
-        <di id="booking-form">
-            <input type="text" id="guestName" placeholder="Your name">
-            <input type="date" id="chechInDate">
+        <div id="booking-form">
+            <input type="text" id="FirstName" placeholder="First Name">
+            <input type="text" id="LastName" placeholder="Last name">
+            <input type="email" id="email" placeholder="name@example.com">
+            <input type="date" id="checkInDate">
             <button onclick="confirmBooking()">Book Now</button>
         </div>
 
