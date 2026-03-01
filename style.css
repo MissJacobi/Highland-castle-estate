@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400&display=swap');
+
+:root {
+    --dusty-rose: #DCAE96;
+    --deep-forest-green: #1B3022;
+    --antique-gold: #B38B39;
+    --parchment: #F5EFE1;
+    --white: #ffffff;
+    --header-font: 'Cormorant Garamond', serif;
+    --body-font: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--parchment);
+    color: var(--deep-forest-green);
+    
+}
+
+h1, h2, h3 {
+    font-family: var(--header-font);
+    color: var(--deep-forest-green);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.2;;
+}
+
+p{
+    font-family: var(--body-font);
+    color: var(--deep-forest-green);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.btn-explore{
+    font-family: var(--body-font);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: var(--dusty-rose);
+    color: #ffffff;
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-explore:hover{
+    background-color: var(--deep-forest-green);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--parchment);
+}
+.logo img{
+    height: 50px;
+    width: auto;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--deep-forest-green);
+    font-family: var(--body-font);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 30px;
+}
+
+.navbar a.active{
+    color: var(--antique-gold);
+    border-bottom: 1px solid var(--antique-gold);
+}
