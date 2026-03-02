@@ -11,9 +11,18 @@
 }
 
 body {
+    margin: 0;
     background-color: var(--parchment);
     color: var(--deep-forest-green);
-    
+}
+
+.page-border{
+    border: 1px solid var(--antique-gold);
+    margin: 20px;
+    min-height: calc(100vh - 40px);
+    box-sizing: border-box;
+    padding: 20px;
+
 }
 
 h1, h2, h3 {
@@ -33,6 +42,8 @@ p{
 }
 
 .btn-explore{
+    display: inline-block;
+    white-space: nowrap;
     font-family: var(--body-font);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -52,11 +63,11 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
-    background-color: var(--parchment);
+    margin-top: 40px;
+    padding: 20 5%;
 }
 .logo img{
-    height: 50px;
+    height: 80px;
     width: auto;
 }
 
@@ -73,4 +84,87 @@ p{
 .navbar a.active{
     color: var(--antique-gold);
     border-bottom: 1px solid var(--antique-gold);
+}
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+    padding: 0 10%;
+    gap: 50px;
+}
+
+.hero-content{
+    flex: 1;
+}
+
+.gold-line{
+    color: var(--antique-gold);
+}
+
+.hero-image{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-image img{
+    width: 100%;
+    height: auto;
+    border: 1.5px solid var(--antique-gold);
+}
+
+.cta-container{
+    margin-top: 30px;
+}
+
+@media(max-width: 900px){
+
+    .hero-section{
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0;
+        min-height: auto;
+        gap: 20px
+    }
+
+    .hero-content{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .page-border{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin: 10px;
+        border-width: 1px;
+        min-height: calc(100vh - 20px);
+    }
+
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+        padding: 10px 0;
+    }
+
+    .navbar a{
+        margin: 5px;
+        font-size: 0.7rem
+    }
+
+    .gold-line{
+        border: none;
+        border-top: 1px solid var(--antique-gold);
+    
+    }
+
 }
