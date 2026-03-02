@@ -48,15 +48,27 @@ p{
     text-transform: uppercase;
     letter-spacing: 2px;
     background-color: var(--dusty-rose);
+
+    box-shadow: 8px 8px 0 -1px var(--parchment), 8px 8px 0 0px var(--antique-gold);
     color: #ffffff;
     padding: 15px 40px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    position: relative;
+    isolation: isolate;
 }
 
 .btn-explore:hover{
     background-color: var(--deep-forest-green);
+    box-shadow: 8px 8px 0 -1px var(--parchment), 8px 8px 0 0px var(--antique-gold);
+    transform: translate(-2px, -2px);
+}
+.btn-explore:active{
+    transform: translate(4px, 4px);
+    box-shadow: 8px 8px 0 -1px var(--parchment), 2px 2px 0 0px var(--antique-gold);
 }
 
 .navbar{
@@ -119,6 +131,8 @@ p{
 
 .cta-container{
     margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 @media(max-width: 900px){
