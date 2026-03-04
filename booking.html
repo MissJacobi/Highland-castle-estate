@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Your Stay</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="images/logo.png" alt="Castle Logo">
-        </div>
-        <a href="index.html">Home</a>
-        <a href="suites.html">Suites</a>
-        <a href="weddings.html">Weddings</a>
-        <a href="about.html">About</a> 
-        <a href="booking.html" class="active">Booking</a>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Your Stay</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="page-border">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Castle Logo">
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="suites.html">Suites</a>
+                    <a href="weddings.html">Weddings</a>
+                    <a href="about.html">About</a> 
+                    <a href="booking.html" class="active">Booking</a>
+                </div>
+                </nav>
 
-    <main id="booking-area">
-        <h2>Select Your Suite</h2>
+             <main id="booking-area">
+                <h2>Select Your Suite</h2>
 
-        <div class="room-selection">
-            <input type="radio" name="room" id="std" value="Standard"><label for="std">Thistle Standard<label><br>
-            <input type="radio" name="room" id="del" value="Deluxe"><label for="del">Royal Deluxe</label><br>
-            <input type="radio" name="room" id="sui" value="Suite"><label for="sui">Monarch Suite</label>
-        </div>
+                <div class="room-selection">
+                    <input type="radio" name="room" id="std" value="Standard"><label for="std">Thistle Standard<label><br>
+                    <input type="radio" name="room" id="del" value="Deluxe"><label for="del">Royal Deluxe</label><br>
+                    <input type="radio" name="room" id="sui" value="Suite"><label for="sui">Monarch Suite</label>
+                </div>
 
-        <div id="booking-form">
-            <input type="text" id="FirstName" placeholder="First Name">
-            <input type="text" id="LastName" placeholder="Last name">
-            <input type="email" id="email" placeholder="name@example.com">
-            <input type="date" id="checkInDate">
-            <button onclick="confirmBooking()">Book Now</button>
-        </div>
+                <div id="booking-form">
+                    <input type="text" id="FirstName" placeholder="First Name">
+                    <input type="text" id="LastName" placeholder="Last name">
+                    <input type="email" id="email" placeholder="name@example.com">
+                    <input type="date" id="checkInDate">
+                    <button onclick="confirmBooking()">Book Now</button>
+                </div>
 
-        <div id="confirmation" style="display: none;">
-            <h3>Booking Confirmed!</h3>
-            <p>Welcome to the Highlands.</p>
-        </div>
-    </main>
-    <script src="script.js"></script>
-</body>
+                <div id="confirmation" style="display: none;">
+                    <h3>Booking Confirmed!</h3>
+                    <p>Welcome to the Highlands.</p>
+                </div>
+             </main>
+        </div>   
+        <script src="script.js">
+
+        </script>
+    </body>
 </html>
