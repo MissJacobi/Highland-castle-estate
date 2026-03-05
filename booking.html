@@ -19,33 +19,82 @@
                     <a href="about.html">About</a> 
                     <a href="booking.html" class="active">Booking</a>
                 </div>
-                </nav>
 
-             <main id="booking-area">
-                <h2>Select Your Suite</h2>
+             </nav>
+
+             <section class="booking-container">
+                <div class="booking-header">
+                    <h1>Reserve Your Experience</h1>
+                    <hr class="gold-line">
+                </div>
 
                 <div class="room-selection">
-                    <input type="radio" name="room" id="std" value="Standard"><label for="std">Thistle Standard<label><br>
-                    <input type="radio" name="room" id="del" value="Deluxe"><label for="del">Royal Deluxe</label><br>
-                    <input type="radio" name="room" id="sui" value="Suite"><label for="sui">Monarch Suite</label>
+                    <h3>Select Your Suite</h3>
+
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+
+                        <div class="booking-cards-wrapper">
+                            <div class="room-cards" onclick="selectRoom(this)">
+                                <img src="images/standard room green.png" alt="">
+                                <div class="card-content">
+                                    <h4>Thistle Standard</h4>
+                                    <p>35 sqm | Queen Bed | Bath & Shower</p>
+                                </div>
+                            </div>
+
+                            <div class="room-cards" onclick="selectRoom(this)">
+                                <img src="images/suite green.png" alt="">
+                                <div class="card-content">
+                                    <h4>Royal Deluxe</h4>
+                                    <p>55 sqm | King Canopy | Master Bath</p>
+                                </div>
+                            </div>
+
+                            <div class="room-cards" onclick="selectRoom(this)">
+                                <img src="images/deluxe suite pink.png" alt="">
+                                <div class="card-content">
+                                    <h4>Monarch Suite</h4>
+                                    <p>85 sqm | Emperor Bed | Master Bath & Guest Toilet</p>
+                                </div>
+                            </div>
+
+                            <div class="room-cards" onclick="selectRoom(this)">
+                                <img src="images/wedding suite.png" alt="">
+                                <div class="card-content">
+                                    <h4>Heirloom Bridal Suite</h4>
+                                    <p>70 sqm | King Silk Bed | Hydro-Spa & Bridal Area</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+                    </div>
                 </div>
 
-                <div id="booking-form">
-                    <input type="text" id="FirstName" placeholder="First Name">
-                    <input type="text" id="LastName" placeholder="Last name">
-                    <input type="email" id="email" placeholder="name@example.com">
-                    <input type="date" id="checkInDate">
-                    <button onclick="confirmBooking()">Book Now</button>
-                </div>
+                <div class="booking-details">
+                    <div class="details-left">
+                        <h3>Your Details</h3>
+                        <div class="form-details">
+                            <input type="text" placeholder="First Name" required>
+                            <input type="text" placeholder="Last Name" required>
+                            <input type="email" placeholder="E-mail" required>
+                        </div>
 
-                <div id="confirmation" style="display: none;">
-                    <h3>Booking Confirmed!</h3>
-                    <p>Welcome to the Highlands.</p>
+                        <button class="btn-explore">
+                            <span>Book Now</span>
+                            <div class="btn-border"></div>
+                        </button>
+                    </div>
+
+                        <div class="details-right">
+                            <h3>Choose Dates</h3>
+                            <div class="calender-placeholder">
+                                <p>Calendar Integration</p>
+                                <input type="date" class="date-picker">
+                            </div>
+                        </div>
                 </div>
-             </main>
+             </section>
         </div>   
-        <script src="script.js">
-
-        </script>
     </body>
 </html>
