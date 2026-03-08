@@ -321,81 +321,195 @@ p{
 /*Booking Page*/
 
 .booking-container{
-    padding: 60px 5%;
-    max-width: 1100px;
+    padding: 20px 5% 60px 5%;
+    margin-top: 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     margin: 0 auto;
+}
+
+.booking-header{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.booking-header h1{
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  color: var(--deep-forest-green);
+}
+
+.room-selection{
+  margin-top: 110px;
+}
+
+.room-selection h3{
+text-align: center;
+margin-bottom: 30px;
+font-size: 1.5rem;
 }
 
 .booking-cards-wrapper{
     width: 100%;
     overflow-x: auto;
-    white-space: nowrap;
-    padding: 40px;
-    margin-bottom: 50px;
-    scrollbar-width: none;
+    padding: 20px 10px 40px 10px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--antique-gold) transparent;
 }
 
 .booking-cards{
     display: flex;
-    gap: 25px;
+    gap: 30px;
+    justify-content: center;
 }
 
 .room-card{
-    flex: 0 0 300px;
+    flex: 0 0 280px;
     background: var(--white);
-    border: 1px solid var(--antique-gold);
-    border-radius: 4px;
+    border: 1px solid rgba(179, 139, 57, 0.2);
+    border-radius: 8px;
     overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.4s ease;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.room-card:hover{
+  transform: translateY(-5px);
+  border-color: var(--antique-gold);
+}
+
+.room-card.selected{
+  transform: translateY(-10px);
+  border: 3px solid var(--antique-gold);
+  box-shadow: 0 15px 40px rgba(179, 139, 57, 0.15);
 }
 
 .room-card img{
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
-    border-bottom: 1px solid var(--antique-gold);
 }
 
 .card-content{
     padding: 20px;
-    text-align: center;
 }
 
 .card-content h4{
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     color: var(--deep-forest-green);
     font-size: 1rem;
 }
 
 .card-content p{
     color: var(--deep-forest-green);
-    line-height: 1.4;
+    line-height: 1.5;
     font-size: 0.8rem;
+    margin: 0;
 }
 
-.room-card.selected{
-    transform: translateY(-15px);
-    border: 2px solid var(--antique-gold);
-    box-shadow: 0 15px 30px rgba(179, 139, 57, 0.2);
+.booking-grid{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 80px;
+  gap: 80px;
+  width: 100%;
 }
 
-.booking-details{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    margin-top: 40px;
+.booking-grid .btn-explore{
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.form-group input, .form-group select{
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    background: transparent;
-    font-family: var(--body-font);
+.details-left h3, .details-right h3{
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(179, 139, 57, 0.3);
+  padding-bottom: 10px;
 }
+
+.form-details{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.form-details input{
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: var(--body-font);
+  font-size: 1rem;
+  transition: border-color 0.3 ease;
+  box-sizing: border-box;
+
+}
+
+.form-details input:focus{
+  outline: none;
+  border-color: var(--antique-gold);
+  background-color: var(--white);
+}
+
+.details-left{
+  flex: 0 1 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+ 
+}
+
+.details-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+}
+/*Calender design*/
+.calendar-wrapper .react-datepicker{
+  border: none;
+  border-radius: 20px;
+  font-family: var(--body-font);
+  padding: 15px;
+
+}
+.calendar-wrapper .react-datepicker__day--in-range,
+.calendar-wrapper .react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+    background-color: var(--antique-gold) !important;
+    color: white !important;
+    border-radius: 50% !important;
+}
+.calendar-wrapper .react-datepicker__day--in-selecting-range,
+.calendar-wrapper .react-datepicker__day--in-range {
+    background-color: rgba(220, 174, 150, 0.3) !important;
+    color: var(--deep-forest-green) !important;
+}
+
+.calendar-wrapper .react-datepicker__day--selecting-range-start,
+.calendar-wrapper .react-datepicker__day--selecting-range-end {
+    background-color: var(--antique-gold) !important;
+    color: white !important;
+}
+
+.calendar-wrapper .react-datepicker__day--today {
+    border: 1px solid var(--antique-gold) !important;
+    background-color: transparent !important;
+    color: var(--deep-forest-green) !important;
+    border-radius: 50% !important;
+}
+.calendar-wrapper .react-datepicker__current-month {
+    font-family: var(--header-font);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--deep-forest-green);
+}
+
 @media(max-width: 900px){
     /*Css for all pages*/
     .navbar{
