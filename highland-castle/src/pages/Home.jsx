@@ -11,17 +11,17 @@ export default function Home() {
           Nestled in the heart of the Scottish Highlands, Highland Castle 
           offers a sanctuary of historic charm and modern luxury.
         </p>
-
+      
+      </div>
+      
+      <div className="hero-image">
+         <img src="/images/castle.png" alt="Highland Castle Exterior" style={{width: '100%', border: '1.5px solid var(--antique-gold)'}} />
         <div className="cta-container">
           <Link to="/suites" className="btn-explore">
             <span>Explore Suites</span>
             <div className="btn-border"></div>
             </Link>
         </div>
-      </div>
-      
-      <div className="hero-image">
-         <img src="/images/castle.png" alt="Highland Castle Exterior" style={{width: '100%', border: '1.5px solid var(--antique-gold)'}} />
       </div>
 
     </section>

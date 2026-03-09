@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home.jsx';
 import Booking from './pages/Booking.jsx';
+import Suites from './pages/Suites.jsx';
 import { NavLink } from 'react-router-dom';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
             </Link>
           </div>
           <div className='nav-links'>
-            <NavLink border to="/">HOME</NavLink>
+            <NavLink to="/">HOME</NavLink>
             <NavLink to="/suites">SUITES</NavLink>
             <NavLink to="/weddings">WEDDINGS</NavLink>
             <NavLink to="/about">ABOUT</NavLink>
@@ -25,6 +26,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path='/suites' element={<Suites />} />
           <Route path="/booking" element={<Booking />} />
         </Routes>
       </div>
