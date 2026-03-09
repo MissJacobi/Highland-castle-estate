@@ -10,6 +10,7 @@ export default function Booking() {
   const [email, setEmail] = useState('');
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(null);
+  const [isBooked, setIsBooked] = useState(false);
 
   const onDateChange = (dates) => {
     const [start, end] = dates;
@@ -43,9 +44,9 @@ export default function Booking() {
       totalNights: Math.ceil((endDate-startDate)/ (1000 * 60 * 60 * 24))
     };
     localStorage.setItem('castle_booking', JSON.stringify(bookingDetails));
+    setIsBooked(true);
 
     console.log("Booking saved:", bookingDetails)
-    alert(`Thank you ${firstName}! Your booking of ${selectedRoom.name} is now reserved`);
   };
 
   
@@ -73,7 +74,16 @@ export default function Booking() {
       </section>
 
       <div className="booking-grid">
-        <div className="details-left">
+        {isBooked ?(
+          <div className='confirmation-message'>
+            <h2>Booking confirmed</h2>
+            <p>Thank you {firstName}, looking forward to your arrival!</p>
+            <button className='btn-explore' onClick={() => setIsBooked(false)}>
+              <span>NEW BOOKING</span>
+            </button>
+          </div>):(
+            <>
+            <div className="details-left">
           <h3>no.2 YOUR DETAILS</h3>
           <div className="form-details">
 
@@ -118,6 +128,8 @@ export default function Booking() {
             />
           </div>
         </div>
+       </>     
+      )}    
       </div>
     </div>
   );
