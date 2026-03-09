@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home.jsx';
 import Booking from './pages/Booking.jsx';
+import { NavLink } from 'react-router-dom';
 
 function App() {
   return (
@@ -9,15 +10,16 @@ function App() {
       <div className='page-border'>
         <nav className='navbar'>
           <div className='logo'>
-            <h2 style={{ fontFamily: 'var(--header-font)', color: 'var(--deep-forest-green)', margin: 0 }}>
-            </h2>
+            <Link to="/">
+            <img src='/images/logo.png' alt='Highland Castle Logo'></img>
+            </Link>
           </div>
           <div className='nav-links'>
-            <Link to="/">HOME</Link>
-            <Link to="/suites">SUITES</Link>
-            <Link to="/weddings">WEDDINGS</Link>
-            <Link to="/about">ABOUT</Link>
-            <Link to="/booking">BOOKING</Link>
+            <NavLink border to="/">HOME</NavLink>
+            <NavLink to="/suites">SUITES</NavLink>
+            <NavLink to="/weddings">WEDDINGS</NavLink>
+            <NavLink to="/about">ABOUT</NavLink>
+            <NavLink to="/booking">BOOKING</NavLink>
           </div>
         </nav>
 
