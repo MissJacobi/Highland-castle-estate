@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 
 
-const RoomSection = ({ number, title, description, details, images }) => {
+const RoomSection = ({ number, title, description, details, images, reverse }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -11,9 +11,9 @@ const RoomSection = ({ number, title, description, details, images }) => {
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
-
+ 
   return(
-    <section className="room-row">
+    <section className={`room-row ${reverse ? 'row-reverse' : ''}`}>
         <div className="room-info">
             <span className="room-number">{number}</span>
             <h2>{title}</h2>
