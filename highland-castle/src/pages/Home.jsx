@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       
       <div className="hero-image">
-         <img src="/images/castle.png" alt="Highland Castle Exterior" style={{width: '100%', border: '1.5px solid var(--antique-gold)'}} />
+         <img src="/images/castle 8k.png" alt="Highland Castle Exterior" style={{width: '100%', border: '1.5px solid var(--antique-gold)'}} />
         <div className="cta-container">
           <Link to="/suites" className="btn-explore">
             <span>Explore Suites</span>

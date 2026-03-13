@@ -18,10 +18,10 @@ export default function Suites() {
                 {label: "Amenities", value: "En-suite walk-in shower & artisan coffee station"}
             ]}
             images={[
-                "/images/standard room pink.png",
-                "/images/standard pink bathroom.png",
-                "/images/standard room green.png",
-                "/images/standard green bathroon.png"
+                "/images/standard room green 8k.jpg",
+                "/images/standard green bathroom 8k.jpg",
+                "/images/standard room pink 8k.jpg",
+                "/images/standard pink bathroom 8k.jpg"
             ]}
             />
 
@@ -37,10 +37,10 @@ export default function Suites() {
                 {label: "Amenities", value: "Freestanding roll-top bath & complimentary decanter of Sherry"}
             ]}
             images={[
-                "/images/suite pink.png",
-                "/images/suite pink bathroom.png",
-                "/images/suite green.png",
-                "/images/suite green bathroom.png"
+                "/images/suite pink 8k .jpg",
+                "/images/suite pink bathroom 8k.jpg",
+                "/images/suite green 8k.jpg",
+                "/images/suite green bathroom 8k.jpg"
             ]}
             />
 
@@ -57,11 +57,11 @@ export default function Suites() {
                 {label: "Amenities", value: "Private wood-burning fireplace & personalized butler service"}
             ]}
             images={[
-                "/images/deluxe suite pink.png",
+                "/images/deluxe suite pink 8k.jpg",
                 "/images/deluxe suite pink bathroom.png",
                 "/images/delux svit rosa toalett.png",
                 "/images/deluxe suite green.png",
-                "/images/deluxe suite green toalett.png"
+                "/images/deluxe suite green toilet 8k.jpg"
             ]}
             />
 
