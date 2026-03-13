@@ -21,7 +21,7 @@ export default function Booking() {
   const rooms = [
     { id: 1, name: "Thistle Standard", desc: "35 sqm | Queen Bed", img: "/images/standard room green 8k.jpg" },
     { id: 2, name: "Royal Deluxe", desc: "55 sqm | King Canopy", img: "/images/suite pink 8k .jpg" },
-    { id: 3, name: "Monarch Suite", desc: "85 sqm | Emperor Bed", img: "/images/deluxe suite pink.png" },
+    { id: 3, name: "Monarch Suite", desc: "85 sqm | Emperor Bed", img: "/images/deluxe suite pink 8k.jpg" },
     { id: 4, name: "Heirloom Bridal Suite", desc: "70 sqm | Hydro-Spa", img: "/images/wedding suite.png" }
   ];
 
@@ -54,7 +54,7 @@ export default function Booking() {
     <div className="booking-page">
       <section className="room-selection">
         <h3>no.1 Choose Room</h3>
-        <div className="booking-card-wrapper">
+        <div className="booking-cards-wrapper">
           <div className="booking-cards">
             {rooms.map(room => (
               <div 
@@ -107,10 +107,6 @@ export default function Booking() {
             onChange={(e) => setEmail(e.target.value)} 
             />
             </div>
-            <button className="btn-explore" onClick={handleBooking}>
-              <span>BOOK NOW</span>
-              <div className="btn-border"></div>
-            </button>
           </div>
         </div>
 
@@ -127,6 +123,13 @@ export default function Booking() {
               minDate={new Date()}
             />
           </div>
+        </div>
+          
+        <div className='booking-cta'>
+            <button className="btn-explore" onClick={handleBooking}>
+              <span>BOOK NOW</span>
+              <div className="btn-border"></div>
+            </button>
         </div>
        </>     
       )}    
