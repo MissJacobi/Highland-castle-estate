@@ -11,7 +11,7 @@ export default function About(){
         description="Highland Castle has stood for centuries as a symbol of elegance. 
         From its pink sandstone walls to the meticulously kept rose gardens, every corner tells a story of Scottish heritage."
         details={[]}
-        images={["/images/castle frontyard.png"]}
+        images={["/images/castle frontyard 8k.png", "/images/castle garden 8k.png"]}
         />
 
         <RoomSection
@@ -20,7 +20,7 @@ export default function About(){
         description="Begin your journey in our checkered marble hall, and end your evening in the tower lounge. 
         Our bar offers the finest local malts with a view that touches the moon."
         details={[]}
-        images={["images/reception.png", "images/lounge.png"]}
+        images={["images/reception 8k.png", "images/lounge.png"]}
         />
 
         <RoomSection
