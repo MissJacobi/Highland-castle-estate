@@ -647,12 +647,43 @@ font-size: 1.5rem;
 }
 /*Section n2 and nr3*/
 .booking-grid{
-  display: flex;
+  display: grid;
+  grid-template-columns: 350px 350px;
   justify-content: center;
-  align-items: flex-start;
   margin-top: 80px;
-  gap: 80px;
-  width: 100%;
+  gap: 40px 60px;
+  position: relative;
+  align-items: start;
+  padding-bottom: 40px;
+  margin: 80px auto 0 auto;
+  
+}
+
+.booking-cta{
+    justify-self: center;
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: center;
+    margin-top: 15px;
+    display: flex;
+}
+
+.details-right{
+    justify-self: start;
+    grid-column: 2;
+    grid-row: 1/ span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+.details-left{
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
 }
 
 .booking-grid .btn-explore{
@@ -811,6 +842,28 @@ margin-bottom: 20px;
         border-top: 1px solid var(--antique-gold);
     }
 
+    .modal-content{
+        width: 85%;
+        padding: 30px 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+        font-size: 16px;
+    }
+
+    .close-btn-circle{
+        top: 10px;
+        right: 10px;
+    }
+
+    .contact-bubble{
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+
     /*Css for index page*/
     .hero-section{
         flex: 1;
@@ -825,22 +878,191 @@ margin-bottom: 20px;
     }
 
     .hero-content{
+        padding-bottom: 30px;
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 0;
+    }
+
+    .hero-content h1{
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .hero-content p{
+        font-size: 0.85rem;
+        margin-bottom: 10px;
     }
 
     .hero-image{
+        margin-top: 0;
         width: 90%;
-        margin: 0 auto;
     }
     .btn-explore{
         padding: 12px 30px;
     }
 
     .cta-container{
-        margin-top: 2%;
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    /*Zigzag layout*/
+    .room-row, .zigzag-layout .room-row:nth-child(even),
+    .room-row.row-reverse{
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 60px; 
+    }
+
+    .room-info{
+        text-align: center;
+    }
+
+    /*Weding card*/
+    .package-grid{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .package-card{
+        width: 90%;
+        box-sizing: border-box;
+    }
+    .package-card.promoted{
+        transform: scale(1);
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .package-contact-wrapper {
+        margin-top: 10px;
+        padding: 0;
+    }
+
+
+    /*Booking page*/
+    .booking-cards-wrapper{
+        display: block;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 0 20px;
+        scrollbar-width: none;
+        padding: 0 20px 20px 20px;
+        margin: 0 -20px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .booking-cards-wrapper::-webkit-scrollbar{
+        display: none;
+    }
+
+    .booking-cards{
+        display: flex;
+        flex-direction: row;
+        grid-template-columns: none;
+        gap: 20px;
+        width: max-content;
+        padding: 10px;
+    } 
+
+    .room-card{
+        min-width: 280px;
+        width: 280px;
+        scroll-snap-align: center;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .room-card img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .booking-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .details-left, 
+    .details-right {
+        order: 3;
+        width: 100% !important;
+        max-width: 300px;
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        align-items: center;
+        display: block;
+    }
+
+    .details-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        order: 1;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .details-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        order: 2;
+        width: 100% !important;
+        margin-bottom: 50px;
+    }
+    .booking-cta{
+        Display: flex;
+        flex-direction: column;
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .form-details{
+        width: 100%;
+        gap: 15px;
+    }
+
+    .form-details input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .btn-explore{
+        width: 100%;
+        max-width: 300px;
+
+    }
+
+    /*confirmation-message*/
+    .confirmation-message{
+        padding: 30px 20px;
+        width: 90%;
+        max-width: 100%;
+        margin: 20px auto;
+        box-sizing: border-box;
+    }
+
+    .confirmation-message h2{
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .confirmation-message p{
+        font-size: 0.95rem;
+        line-height: 1.5;
     }
 }
