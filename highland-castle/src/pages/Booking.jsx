@@ -21,8 +21,8 @@ export default function Booking() {
   const rooms = [
     { id: 1, name: "Thistle Standard", desc: "35 sqm | Queen Bed", img: "/images/standard room green 8k.jpg" },
     { id: 2, name: "Royal Deluxe", desc: "55 sqm | King Canopy", img: "/images/suite pink 8k .jpg" },
-    { id: 3, name: "Monarch Suite", desc: "85 sqm | Emperor Bed", img: "/images/deluxe suite pink 8k.jpg" },
-    { id: 4, name: "Heirloom Bridal Suite", desc: "70 sqm | Hydro-Spa", img: "/images/wedding suite.png" }
+    { id: 3, name: "Monarch Suite", desc: "85 sqm | Emperor Bed", img: "/images/deluxe suite green 8k.png" },
+    { id: 4, name: "Heirloom Bridal Suite", desc: "70 sqm | Hydro-Spa", img: "/images/wedding suite 8k.jpg" }
   ];
 
   const handleBooking = () => {

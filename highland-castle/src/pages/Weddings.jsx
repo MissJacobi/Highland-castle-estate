@@ -6,12 +6,12 @@ export default function Weddings({ openContact }){
     return(
         <div className="suites-container">
             <RoomSection
-            number="The Vows"
-            title="A Ceremony Under the Chandeliers"
-            description="Exchange your vows in our breathtaking Rose Hall. With panoramic views of the misty highlands and golden sunlight streaming through floor-to-ceiling windows, 
-            your ceremony will be as timeless as the castle walls themselves."
+            number="The Emerald Ceremony"
+            title="An Affirmation In Jewel Tones"
+            description="Begin your journey in the majestic Smaragd Hall. Surrounded by rich jewel tones and warm gold accents, exchange your vows under the soft glow of historic chandeliers. 
+            The hall's timeless Royal Core design creates an atmosphere of dignified romance, making your affirmation a moment of grand elegance that will be cherished forever."
             details={[]}
-            images={["images/wedding reception.png"]}
+            images={["images/wedding arch 8k.jpg","images/wedding hall 8k.jpg"]}
             reverse={true}
             />
             <section className="wedding-offers">
@@ -43,12 +43,13 @@ export default function Weddings({ openContact }){
                 </div>
             </section>
             <RoomSection
-            number="The Celebration"
-            title="Feasts Fit for Royalty"
-            description="Following your ceremony, invite your guests to a grand banquet. 
-            Our dining hall is transformed into a floral sanctuary where world-class cuisine meets old-world elegance."
+            number="The Grand Reception"
+            title="A Symphony In Dusty Rose"
+            description="Celebrate your love in the breathtaking Rose Hall. 
+            Under celestial frescoes and crystal chandeliers, world-class cuisine is served amidst shimmering gold and pink peonies. 
+            This is a grand banquet where Royal Core elegance meets timeless romance, creating a wedding feast to be remembered forever."
             details={[]}
-            images={["images/wedding dining.png"]}
+            images={["images/close up rose hall 8k.jpg","images/rose hall 8k.jpg"]}
             />
         </div>
     );
