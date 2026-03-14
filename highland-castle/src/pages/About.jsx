@@ -20,16 +20,16 @@ export default function About(){
         description="Begin your journey in our checkered marble hall, and end your evening in the tower lounge. 
         Our bar offers the finest local malts with a view that touches the moon."
         details={[]}
-        images={["images/reception 8k.png", "images/lounge.png"]}
+        images={["images/reception 8k.png", "images/lounge 8k.jpg"]}
         />
 
         <RoomSection
         number="Gastronomy"
-        title="Dining in the Garden Hall"
+        title="The Gilded Grove"
         description="Located on the ground floor, our dining room celebrates the seasons. 
         Enjoy locally sourced delicacies under crystal chandeliers in an atmosphere of refined tranquility."
         details={[]}
-        images={["/images/dinning.png", "/images/wedding dining.png"]}
+        images={["/images/resturant evening 8k.jpg", "/images/close up on bar 8k.jpg", "/images/resturant 8k.jpg"]}
         />
 
         <RoomSection
@@ -38,7 +38,7 @@ export default function About(){
         description="Escape to our subterranean spa, where the ancient stone meets modern serenity. 
         From hydrotherapy pools to bespoke botanical treatments, find your inner peace amidst the Highland mist."
         details={[]}
-        images={["/images/spa.png", "/images/spa treatmentroom.png"]}
+        images={["/images/spa 8k.jpg", "/images/spa treatment room 8k.jpg"]}
         />
 
         <RoomSection

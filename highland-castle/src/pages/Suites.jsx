@@ -57,11 +57,12 @@ export default function Suites() {
                 {label: "Amenities", value: "Private wood-burning fireplace & personalized butler service"}
             ]}
             images={[
+                "/images/deluxe suite green 8k.png",
+                "/images/deluxe suite green bathroom 8k.png",
+                "/images/deluxe suite green toilet 8k.jpg",
                 "/images/deluxe suite pink 8k.jpg",
-                "/images/deluxe suite pink bathroom.png",
-                "/images/delux svit rosa toalett.png",
-                "/images/deluxe suite green.png",
-                "/images/deluxe suite green toilet 8k.jpg"
+                "/images/deluxe suite pink bathroom 8k.png",
+                "/images/deluxe suite pink toilet 8k.jpg"
             ]}
             />
 
@@ -77,9 +78,9 @@ export default function Suites() {
                 {label: "Amenities", value: "Champagne on ice & hydrotherapy spa bath"}
             ]}
             images={[
-                "/images/wedding suite.png",
-                "/images/wedding bathroom.png",
-                "/images/wedding pic.png"
+                "/images/wedding suite 8k.jpg",
+                "/images/wedding bathroom 8k.jpg",
+                "/images/wedding pic 8k.jpg"
             ]}
             />
     </div>
