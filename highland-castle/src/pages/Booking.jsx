@@ -77,7 +77,9 @@ export default function Booking() {
         {isBooked ?(
           <div className='confirmation-message'>
             <h2>Booking confirmed</h2>
-            <p>Thank you {firstName}, looking forward to your arrival!</p>
+            <p>Thank you <strong>{firstName}</strong>! We are delighted to welcome you to an unforgettable stay. 
+              A confirmation email with your details has been sent to <strong>{email}</strong></p>
+              <p>We look forward to hosting you.</p>
             <button className='btn-explore' onClick={() => setIsBooked(false)}>
               <span>NEW BOOKING</span>
             </button>

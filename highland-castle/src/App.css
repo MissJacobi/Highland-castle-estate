@@ -740,6 +740,25 @@ gap: 20px;
 }
 /*Confirmation at booking*/
 
+.booking-grid .confirmation-message{
+    grid-column: 1/-1;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 40px auto;
+    padding: 60px;
+    max-height: 400px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.confirmation-message strong{
+    color: var(--antique-gold);
+    font-weight: 600;
+}
+
 .confirmation-message{
     display: flex;
     flex-direction: column;
@@ -752,7 +771,7 @@ gap: 20px;
     border: 1px solid var(--antique-gold);
     width: 100%;
     max-width: 600px;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 
 .confirmation-message h2{
@@ -1049,20 +1068,21 @@ margin-bottom: 20px;
 
     /*confirmation-message*/
     .confirmation-message{
-        padding: 30px 20px;
+        grid: 1;
+        padding: 40px 15px;
         width: 90%;
         max-width: 100%;
-        margin: 20px auto;
+        margin: 20px 0;
         box-sizing: border-box;
     }
 
     .confirmation-message h2{
         font-size: 1.8rem;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .confirmation-message p{
-        font-size: 0.95rem;
-        line-height: 1.5;
+        font-size: 0.8rem;
+        line-height: 1.4;
     }
 }
